@@ -43,6 +43,7 @@
 		<module>springbootboilerplate-discovery-service</module>
 		<module>springbootboilerplate-gateway</module>
 		<module>springbootboilerplate-sample-service</module>
+		<module>webapplication</module>
 	</modules>
 
 	<build>
