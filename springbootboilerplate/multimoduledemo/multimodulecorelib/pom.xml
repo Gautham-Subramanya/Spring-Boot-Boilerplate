@@ -9,10 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dravid</groupId>
-	<artifactId>springbootboilerplate</artifactId>
+	<artifactId>multimodulecorelib</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springbootboilerplate</name>
-	<packaging>pom</packaging>
+	<name>multimodulecorelib</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -22,7 +21,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
 		<dependency>
@@ -38,22 +37,5 @@
 		</dependency>
 	</dependencies>
 
-	<modules>
-		<module>springbootboilerplate-config-server</module>
-		<module>springbootboilerplate-discovery-service</module>
-		<module>springbootboilerplate-gateway</module>
-		<module>springbootboilerplate-sample-service</module>
-		<module>webapplication</module>
-		<module>multimoduledemo</module>
-	</modules>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>

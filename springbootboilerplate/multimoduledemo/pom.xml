@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dravid</groupId>
-	<artifactId>springbootboilerplate</artifactId>
+	<artifactId>multimoduledemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springbootboilerplate</name>
-	<packaging>pom</packaging>
+	<name>multimoduledemo</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -38,15 +38,6 @@
 		</dependency>
 	</dependencies>
 
-	<modules>
-		<module>springbootboilerplate-config-server</module>
-		<module>springbootboilerplate-discovery-service</module>
-		<module>springbootboilerplate-gateway</module>
-		<module>springbootboilerplate-sample-service</module>
-		<module>webapplication</module>
-		<module>multimoduledemo</module>
-	</modules>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -55,5 +46,10 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<modules>
+		<module>multimodulecorelib</module>
+		<module>multimodulewebservice</module>
+	</modules>
 
 </project>
